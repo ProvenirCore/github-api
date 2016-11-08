@@ -19,12 +19,6 @@
     <tag>HEAD</tag>
   </scm>
 
-  <distributionManagement>
-    <site>
-      <id>github-pages</id>
-      <url>gitsite:git@github.com/kohsuke/${project.artifactId}.git</url>
-    </site>
-  </distributionManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -207,7 +201,7 @@
       <url>https://clouddev.provenir.net/artifactory/platform</url>
     </pluginRepository>
   </pluginRepositories>
-  
+
     <distributionManagement>
     <repository>
       <id>clouddev.provenir.net</id>
