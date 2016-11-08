@@ -157,18 +157,64 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
-  <repositories>
+
+<repositories>
     <repository>
-      <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>repo</name>
+      <url>https://clouddev.provenir.net/artifactory/repo</url>
+    </repository>
+    <repository>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>snapshots</id>
+      <name>repo</name>
+      <url>https://clouddev.provenir.net/artifactory/repo</url>
+    </repository>
+    <repository>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>clouddev.provenir.net</id>
+      <name>clouddev.provenir.net-releases</name>
+      <url>https://clouddev.provenir.net/artifactory/platform</url>
     </repository>
   </repositories>
   <pluginRepositories>
     <pluginRepository>
-      <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>repo</name>
+      <url>https://clouddev.provenir.net/artifactory/repo</url>
+    </pluginRepository>
+    <pluginRepository>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>snapshots</id>
+      <name>repo</name>
+      <url>https://clouddev.provenir.net/artifactory/repo</url>
+    </pluginRepository>
+    <pluginRepository>
+      <id>clouddev.provenir.net</id>
+      <name>clouddev.provenir.net-releases</name>
+      <url>https://clouddev.provenir.net/artifactory/platform</url>
     </pluginRepository>
   </pluginRepositories>
+  
+    <distributionManagement>
+    <repository>
+      <id>clouddev.provenir.net</id>
+      <name>clouddev.provenir.net-releases</name>
+      <url>https://clouddev.provenir.net/artifactory/platform</url>
+    </repository>
+  </distributionManagement>
 
   <reporting>
     <plugins>
