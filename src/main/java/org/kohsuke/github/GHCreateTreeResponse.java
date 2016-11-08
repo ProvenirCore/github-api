@@ -11,7 +11,7 @@ public class GHCreateTreeResponse {
 	private GHTreeEntry[] tree;
 
 	public GHTreeEntry[] getTree() {
-		return tree;
+		return tree.clone();
 	}
 
 	public String getUrl() {

@@ -173,6 +173,7 @@ public class GHCommit {
 	}
 
 	public static class Tree {
+		@SuppressFBWarnings(value = "UUF_UNUSED_FIELD", justification = "We don't provide it in API now")
 		String url;
 		String sha;
 	}
